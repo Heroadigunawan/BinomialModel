@@ -2,10 +2,12 @@
 title: "Binomial Model"
 author: "Hero"
 date: "29/11/2019"
-output: github_document
+output: 
+keep_md: yes
 ---
 
 Using Cox-Ross-Rubinstein method, where $\sigma$ is volatility and $\delta$ is a time step, we can find the risk-neutral probability. 
 
-$$ u = e^{\sigma \sqrt{\delta}} $$
-$$ d = e^{-\sigma \sqrt{\delta}} = \frac{1}{u} $$
+\[u = e^{\sigma \sqrt{\delta}}\]
+
+\[d = e^{-\sigma \sqrt{\delta}} = \frac{1}{u}\]
