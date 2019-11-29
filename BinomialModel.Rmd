@@ -1,6 +1,5 @@
 ---
 title: "Binomial Model"
-author: "Hero"
 date: "29/11/2019"
 output: html_document
 keep_md: yes
@@ -8,6 +7,8 @@ keep_md: yes
 
 Using Cox-Ross-Rubinstein method, where $\sigma$ is volatility and $\delta$ is a time step, we can find the risk-neutral probability. 
 
-$u = e^{\sigma \sqrt{\delta}}$
+$$u = e^{\sigma \sqrt{\delta}}$$
 
-$d = e^{-\sigma \sqrt{\delta}} = \frac{1}{u}$
+$$d = e^{-\sigma \sqrt{\delta}} = \frac{1}{u}$$
+$$p = \frac{e^{\sigma \delta t} - d}{u-d}$$
+Knowing the risk-neutral probability, we can compute the the option value at $T_0$ by discounting the expected payoff
